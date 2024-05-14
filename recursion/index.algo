@@ -1,0 +1,17 @@
+FUNCTION fact(num) : INTEGER
+VAR
+    i,res : INTEGER
+BEGIN
+res:=1
+    FOR i FROM num TO 1 STEP -1  DO
+    res := res*i
+        
+    END_FOR
+    RETURN res ;
+END
+ALGORITHM facto
+VAR
+    set_declarations
+BEGIN
+   result:= fact(5)
+END

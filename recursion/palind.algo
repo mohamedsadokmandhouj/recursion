@@ -1,0 +1,20 @@
+FUNCTION pal (str,i) : STRING
+VAR
+    
+BEGIN
+j:= str.length-1-i
+IF (i==j or i>j) THEN
+    RETURN "palaindron"
+
+Else-iF (str[i]!=str[j]) THEN
+    RETURN "no palaindron"
+    
+ELSE
+RETURN pal(str,i+1)
+
+
+   
+END_IF
+
+    
+END
